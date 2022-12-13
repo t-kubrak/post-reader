@@ -32,4 +32,9 @@ export class PostsComponent {
       },
     ];
   }
+
+  hidePost(post: Post) {
+    console.log(post)
+    this.posts = this.posts.filter(p => p.id !== post.id);
+  }
 }
